@@ -6,27 +6,27 @@ const questions = [
  {
     question: "What is JavaScript?",
     choices:  ["A programming language\n(a)", "A tool for opening beer cans\n(b)", "A large cup of coffee?\n(c)", ],
-    answer:     "a","A programing language"
+    answer:     "a",
  },
  {
     question: "what do you start an array with?",
     choices: ["quotes\n(a)", "curly brackets\n(b)", "parentheses\n(c)", "square brackets\n(d)"],
-    answer:    "d","square brackets"
+    answer:    "d",
  },
  {
     question: "What symbol do you use to indicate an ID?",
     choices: ["#\n(a)", "||\n(b)", "&&\n(c)", "$\n(d)"],
-    answer:    "a","#"
+    answer:    "a",
  },
  {
     question: "Can a function call itself?",
     choices: ["Yes\n(a)", "No\n(b)"],
-    answer: "a","yes",
+    answer: "a",
  },
  {
    question: "Why don't I feel like I know more than I do?",
    choices: ["You need to study more\n(a)", "You are the king of the world\n(b)", "You eat too many PBandJ sandwiches\n(c)"],
-   answer: "a","You need to study more",
+   answer: "a"
  }
 ];
 
