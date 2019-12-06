@@ -1,36 +1,58 @@
 //Score is set to zero
  const score = 0
+
+ //timer in sec
+ const time = 150
  
 //Questions I was funny on the last one
 const questions = [
  {
     question: "What is JavaScript?",
-    choices:  ["A programming language\n(a)", "A tool for opening beer cans\n(b)", "A large cup of coffee?\n(c)", ],
+    choices:  ["A programming language(a)", "A tool for opening beer cans(b)", "A large cup of coffee?(c)"], 
     answer:     "a",
  },
  {
     question: "what do you start an array with?",
-    choices: ["quotes\n(a)", "curly brackets\n(b)", "parentheses\n(c)", "square brackets\n(d)"],
+    choices: ["quotes(a)", "curly brackets(b)", "parentheses(c)", "square brackets(d)"],
     answer:    "d",
  },
  {
     question: "What symbol do you use to indicate an ID?",
-    choices: ["#\n(a)", "||\n(b)", "&&\n(c)", "$\n(d)"],
+    choices: ["#(a)", "||(b)", "&&(c)", "$(d)"],
     answer:    "a",
  },
  {
     question: "Can a function call itself?",
-    choices: ["Yes\n(a)", "No\n(b)"],
+    choices: ["Yes(a)", "No(b)"],
     answer: "a",
  },
  {
    question: "Why don't I feel like I know more than I do?",
-   choices: ["You need to study more\n(a)", "You are the king of the world\n(b)", "You eat too many PBandJ sandwiches\n(c)"],
+   choices: ["You need to study more(a)", "You are the king of the world(b)", "You eat too many PBandJ sandwiches(c)"],
    answer: "a"
  }
 ];
 
 
+//The for loop for the questions
+for (let i = 0; i < questions.length; i++){
+   let responce = window.prompt(questions[i].prompt);
+   if(responce === choices[i].answer){
+   //the let window.prompt(questions might need to be choice)
+   score++;
+   alert("Correct!");
+   //look to add a sound to this
+}
+   else { 
+      alert("Wrong!");
+      //look to add sound to this and take away 5 sec
+   };
+};
+//end of for loop
+
+
+//Tell the score 
+alert("you got " + score + " correct great job!")
 
 
 const buttons = document.querySelector("#btn")
