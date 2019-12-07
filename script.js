@@ -3,6 +3,8 @@
 
  //timer in sec
  const time = 150
+
+ const buttons = document.querySelector("#btn")
  
 //Questions I was funny on the last one
 const questions = [
@@ -34,9 +36,9 @@ const questions = [
 ];
 
 
-//The for loop for the questions
+//The for loop for the questions or just 
 for (let i = 0; i < questions.length; i++){
-   let responce = window.prompt(questions[i].prompt);
+   let responce = prompt(questions[i].question);
    if(responce === choices[i].answer){
    //the let window.prompt(questions might need to be choice)
    score++;
@@ -55,12 +57,13 @@ for (let i = 0; i < questions.length; i++){
 alert("you got " + score + " correct great job!")
 
 
-const buttons = document.querySelector("#btn")
+
  
  
 
 buttons.addEventListener("click", function () {
-   /*  put what I want to happen here */
+   ///set inbtervule funcution
+   /*  put what I want to happen here  start the timer*/
    console.log("Button works")
 })
 
