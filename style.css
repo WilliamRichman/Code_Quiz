@@ -52,3 +52,26 @@ body{
 cursor: pointer;
 background-color: darkgray;
 }
+
+#next-btn {
+   background-color: lightgrey;
+   width:250px;
+   font-size: 20px;
+   color: white;
+   border: 1px solid black;
+   border-radius: 50px;
+   margin: 10px 40px 10px 0px;
+   padding: 30px 30px;
+}
+
+#start-btn {
+    background-color: lightgrey;
+    width:250px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 30px 30px;
+ }
+ 

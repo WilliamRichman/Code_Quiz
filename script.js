@@ -1,3 +1,9 @@
+//buttons for start and next
+const startButton = document.getElementById('star-btn')
+startButton.addEventListener('click', startGame)
+const nextButton = document.getElementById('next-btn')
+nextButton.addEventListener('click', nextPage)
+
 //Score is set to zero
 const score = 0
 
@@ -5,6 +11,27 @@ const score = 0
 const time = 150
 
 const buttons = document.querySelector("#btn")
+function btnListen(btn) {
+   document.addEventListener('click', function);
+}
+//will this work all 6 buttons at once?
+
+
+
+
+function startgame() {
+   console.log('Start working');
+}
+
+function setNextQuestion() {
+
+}
+
+function selectAnswer() {
+
+
+}
+
 
 //Questions I was funny on the last one
 const questions = [
@@ -36,8 +63,10 @@ const questions = [
 ];
 
 
-//The for loop for the questions or just 
-for (let i = 0; i < questions.length; i++) {
+
+
+//The for loop for the questions or just  old functions
+/* for (let i = 0; i < questions.length; i++) {
    let responce = prompt(questions[i].question);
    if (responce === choices[i].answer) {
       //the let window.prompt(questions might need to be choice)
@@ -53,7 +82,7 @@ for (let i = 0; i < questions.length; i++) {
 //end of for loop
 
 
-//Tell the score 
+//Tell the score
 alert("you got " + score + " correct great job!")
 
 
@@ -63,7 +92,7 @@ alert("you got " + score + " correct great job!")
 
 buttons.addEventListener("click", function () {
    start timer
-})
+}) */
 
 
 
