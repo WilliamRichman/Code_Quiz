@@ -1,17 +1,15 @@
 const stratButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
 const questionContainerEl = document.getElementById('question-container')
 let currentQuestionIndex = questions
 const questionEl = document.getElementById('questions')
-const answerB = document.getElementById('answer-buttons')
+const answerEl = document.getElementById('answer-buttons')
 
 stratButton.addEventListener('click', startGame)
 
 function startGame() {
     console.log('working');
-    stratButton.classList.add('hide');
-    loadQuestions = questions
-    questionContainerEl.classList.remove('hide');
-    currentQuestionsIndex = 0;
+
     setNextQuestion()
 }
 
