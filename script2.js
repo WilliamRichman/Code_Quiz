@@ -37,6 +37,7 @@ let choices3 = document.getElementById('c3')
 const answerEl = document.getElementById('answer-buttons')
 
 startButton.addEventListener('click', startGame)
+//add next button add to show next questrion event listener
 
 function startGame() {
     console.log('working');
@@ -67,6 +68,15 @@ function showQuestion(question) {
 };
 
 function selectAnswer() {
+    if (choiceEl === choices0){
+        //add score and add to local storage
+        // add score and every second thag is on the clok to the score. 
+        //after the questiuon was answered juse the class hide to show questrion two.
+        //choiceEl.textContent && choices0 = true()
+    }
+    else{
+            
+    }
 
 
 };
