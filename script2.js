@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "What is JavaScript?",
-        choices: ["A programming language", "A tool for opening beer cans", "A large cup of coffee?"],
+        choices: ["A programming language", "A tool for opening beer cans", "A large cup of coffee?", "A amount of hot lava?"],
         answer: "A programming language",
     },
     {
@@ -16,12 +16,12 @@ const questions = [
     },
     {
         question: "Can a function call itself?",
-        choices: ["Yes", "No"],
+        choices: ["Yes", "No", "maybe", "I dont know"],
         answer: "Yes",
     },
     {
         question: "Why don't I feel like I know more than I do?",
-        choices: ["You need to study more", "You are the king of the world", "You eat too many PBandJ sandwiches"],
+        choices: ["You need to study more", "You are the king of the world", "You eat too many PBandJ sandwiches", "I am sitting in a corner crying"],
         answer: "You need to study more"
     }
 ];
@@ -58,24 +58,27 @@ function showQuestion(question) {
     /* questionElement.interText = questions.questions */
     console.log(question)
     questionEl.textContent = question.question
-    choices0.textContent =  question.choices[0]
+    choices0.textContent = question.choices[0]
+    choices1.textContent = question.choices[1]
+    choices2.textContent = question.choices[2]
+    choices3.textContent = question.choices[3]
 
     /* questions && choices console.log('corecect') */
     /* activity 24 data attributs look over this value on a button or a tag week 4*/
     /* week 5 fridge game will help activity 11 that wil help  */
 
-    
+
 };
 
 function selectAnswer() {
-    if (choiceEl === choices0){
+    if (choiceEl === choices0) {
         //add score and add to local storage
         // add score and every second thag is on the clok to the score. 
         //after the questiuon was answered juse the class hide to show questrion two.
         //choiceEl.textContent && choices0 = true()
     }
-    else{
-            
+    else {
+
     }
 
 
