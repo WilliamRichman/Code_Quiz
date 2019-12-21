@@ -39,7 +39,7 @@ const answerEl = document.getElementById('answer-buttons')
 startButton.addEventListener('click', startGame)
 //add next button add to show next questrion event listener
 
-document.addEventListener('click', function(event){
+document.getElementById("questions-container").addEventListener('click', function(event){
     if(event.target.matches('.choice')){
         console.log("Choice clicked")
         console.log(event.textContent)
