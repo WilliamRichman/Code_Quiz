@@ -36,23 +36,35 @@ let choices2 = document.getElementById('c2')
 let choices3 = document.getElementById('c3')
 const answerEl = document.getElementById('answer-buttons')
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame())
 //add next button add to show next questrion event listener
+
+/* nextButton.addEventListener('click', setNextQuestion()) */
 
 function startGame() {
     console.log('working');
     questionContainerEl.removeAttribute('class')
-
     setNextQuestion()
 }
 
+/* function showNextButton() {
+    nextButton.removeAttribute('class', 'hide');
+} */
 
 function setNextQuestion() {
+
     startButton.setAttribute('class', 'hide')
     showQuestion(questions[currentQuestionIndex])
+    /* nextButton.removeAttribute('class') */
+
 
 
 };
+
+/* function resetState(){
+    nextButton.classList.add('hide')
+    while()
+} */
 
 function showQuestion(question) {
     /* questionElement.interText = questions.questions */
@@ -71,15 +83,13 @@ function showQuestion(question) {
 };
 
 function selectAnswer() {
-    if (choiceEl === choices0) {
-        //add score and add to local storage
-        // add score and every second thag is on the clok to the score. 
-        //after the questiuon was answered juse the class hide to show questrion two.
-        //choiceEl.textContent && choices0 = true()
+    if (choiceEl || answers) {
+        console.log("Yes");
+        /* showNextButton(setNextQuestion()) */
     }
-    else {
-
-    }
+    /*    else {
+           console.log("No")
+       } */
 
 
 };
