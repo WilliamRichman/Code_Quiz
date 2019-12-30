@@ -39,7 +39,18 @@ const answerEl = document.getElementById('answer-buttons')
 startButton.addEventListener('click', startGame())
 //add next button add to show next questrion event listener
 
+<<<<<<< HEAD
 /* nextButton.addEventListener('click', setNextQuestion()) */
+=======
+document.getElementById("questions-container").addEventListener('click', function(event){
+    if(event.target.matches('.choice')){
+        console.log("Choice clicked")
+        console.log(event.textContent)
+        console.log(event)
+    }
+
+})
+>>>>>>> 71cb33ec0b40d2e85316b19c37aaa73d7f67fea7
 
 function startGame() {
     console.log('working');
@@ -93,7 +104,6 @@ function selectAnswer() {
 
 
 };
-
 
 
 
