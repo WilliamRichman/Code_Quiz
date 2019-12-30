@@ -7,9 +7,8 @@ nextButton.addEventListener('click', nextQuestion)
 
 
 function startGame() {
-    startButton.classList.add('hide')
-    questionContainerEl.classList.remove('hide')
-    setNextQuestion()
+    console.log("started")
+
 
 
 }
