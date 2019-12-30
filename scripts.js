@@ -2,7 +2,7 @@ const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 
 startButton.addEventListener('click', startGame)
-nextQuestion.addEventListener('click', nextQuestion)
+nextButton.addEventListener('click', nextQuestion)
 
 
 function startGame() {
