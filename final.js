@@ -5,7 +5,7 @@ const questions = [
         answer: "A programming language",
     },
     {
-        question: "what do you start an array with?",
+        question: "what do you put an array in?",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "square brackets",
     },
@@ -51,6 +51,10 @@ $("#btn1").click(function () {
     }else {
         alert("Wrone")
     }
+    
+    moveToNext();
+
+
 
 });
 
@@ -66,6 +70,7 @@ $("#btn2").click(function () {
     }else {
         alert("Wrone")
     }
+    moveToNext();
 });
 
 
@@ -84,8 +89,10 @@ $("#btn3").click(function () {
     }else {
         alert("Wrone")
     }
+    moveToNext();
 
 })
+
 
 $("#btn4").click(function () {
 
@@ -99,17 +106,25 @@ $("#btn4").click(function () {
     }else {
         alert("Wrone")
     }
+    moveToNext();
 
 });
 
+let counter = 0
 
 function moveToNext(){
-//clear all conatiners that have values even buttons
-//move to the next index of the array set with global vaeryable = to 0
-//insteand of using 0 you will use the globale var for moving thur 
-//like a for loop make the index ++
-//using the index you will populate the page questions[].question to get the next question 
-//same thing for the choices
-//same thing for the answers
+    counter++
+    $(".question").text(questions[counter].question);
+    $("#btn1").text(questions[counter].choices[0]);
+    $("#btn2").text(questions[counter].choices[1]);
+    $("#btn3").text(questions[counter].choices[2]);
+    $("#btn4").text(questions[counter].choices[3]);
+
+    if (counter === questions[counter].choice[3]){
+        alert("You fucked up")
+    }
+    /*  if i get to question 4 do somethiong */
 
 }
+
+
